@@ -12,7 +12,8 @@ class NoteAuto:
     def createFile(self, filename):
         self.fileName = filename
         self.fileName = self.fileName + ".txt"
-        self.pathFile = "/Users/ketterling/Documents/Notizen/" + self.fileName
+        #TODO: Add relativ path or user
+        self.pathFile = "/Users/*/Documents/Notizen/" + self.fileName
 
         exists = os.path.isfile(self.pathFile)
 
